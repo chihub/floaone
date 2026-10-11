@@ -24,19 +24,19 @@
   --readw: 720px;
 }
 [data-theme="dark"] {
-  --ink: #e8ebee;
-  --ink-2: #aeb6bf;
-  --ink-3: #7e8794;
-  --ground: #141b24;
-  --ground-2: #18202d;
-  --surface: #1a2434;
-  --border: #273242;
-  --border-2: #354357;
-  --accent: #7fa6c5;
-  --header-bg: rgba(20,27,36,0.8);
-  --work-bg: #18202d;
-  --media-bg: #18202d;
-  --media-border: rgba(53,67,87,0.3);
+  --ink: #ebeef2;
+  --ink-2: #abb5c2;
+  --ink-3: #7b8697;
+  --ground: #121a27;
+  --ground-2: #162132;
+  --surface: #18253a;
+  --border: #25364c;
+  --border-2: #344a68;
+  --accent: #77a3ce;
+  --header-bg: rgba(18,26,39,0.8);
+  --work-bg: #162132;
+  --media-bg: #162132;
+  --media-border: rgba(52,74,104,0.3);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }
 html { scroll-behavior: smooth; -webkit-font-smoothing: antialiased; }
