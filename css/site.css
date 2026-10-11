@@ -346,3 +346,13 @@ footer.legal { padding: 28px 0; }
   .impact-stats { grid-template-columns: repeat(2, 1fr); }
   .hero h1, .page-head h1 { font-size: 36px; }
 }
+
+/* ===== Smooth scrolling (Locomotive Scroll) =====
+   Content moves by transform, so position: sticky no longer works inside the container.
+   The header becomes fixed with matching space reserved, and the sticky section labels go static. */
+html.has-scroll-smooth header.site { position: fixed; top: 0; left: 0; right: 0; }
+html.has-scroll-smooth [data-scroll-container] { padding-top: 64px; }
+html.has-scroll-smooth .section-grid > .label-col .eyebrow,
+html.has-scroll-smooth .section-grid > .label-col h2 { position: static; }
+.c-scrollbar { z-index: 20; }
+.c-scrollbar_thumb { background-color: var(--ink-3); opacity: 0.45; width: 6px; margin: 2px; }
