@@ -2,7 +2,7 @@
    Derived from index_temp.html (approved homepage HTML).
    Type: Cormorant Garamond (headlines + numerals) · DM Sans (body, labels, wordmark)
    Width 1280px · 14px body baseline · accent appears once per section, never on body copy
-   Light is the default theme; the toggle stores the visitor's choice. */
+   Dark is the default theme; the toggle stores the visitor's choice. */
 
 :root, [data-theme="light"] {
   --ink: #1a1a18;
@@ -27,15 +27,15 @@
   --ink: #ebeef2;
   --ink-2: #abb5c2;
   --ink-3: #7b8697;
-  --ground: #121a27;
-  --ground-2: #162132;
-  --surface: #18253a;
+  --ground: #0d1626;
+  --ground-2: #111d31;
+  --surface: #142339;
   --border: #25364c;
   --border-2: #344a68;
   --accent: #77a3ce;
-  --header-bg: rgba(18,26,39,0.8);
-  --work-bg: #162132;
-  --media-bg: #162132;
+  --header-bg: rgba(13,22,38,0.8);
+  --work-bg: #111d31;
+  --media-bg: #111d31;
   --media-border: rgba(52,74,104,0.3);
 }
 * { margin: 0; padding: 0; box-sizing: border-box; }

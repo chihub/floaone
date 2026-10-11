@@ -1,4 +1,4 @@
-// Theme toggle (light by default; the visitor's choice is remembered), mobile menu,
+// Theme toggle (dark by default; the visitor's choice is remembered), mobile menu,
 // and smooth scrolling via Locomotive Scroll (as in info/Blocomotivejs-main).
 (function () {
   var root = document.documentElement;
