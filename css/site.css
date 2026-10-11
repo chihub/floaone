@@ -340,3 +340,11 @@ html.has-scroll-smooth .section-grid > .label-col .eyebrow,
 html.has-scroll-smooth .section-grid > .label-col h2 { position: static; }
 .c-scrollbar { z-index: 20; }
 .c-scrollbar_thumb { background-color: var(--ink-3); opacity: 0.45; width: 6px; margin: 2px; }
+
+/* about: contact details */
+.contact-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 48px; margin-top: 32px; max-width: 980px; }
+.contact-list .k { font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; }
+.contact-list a.v { font-family: var(--ff-serif); font-size: 24px; font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--border-2); transition: color 0.15s, border-color 0.15s; word-break: break-word; }
+.contact-list a.v:hover { color: var(--accent); border-color: var(--accent); }
+.contact-list p { font-size: 15px; line-height: 1.6; color: var(--ink-2); }
+@media (max-width: 900px) { .contact-list { grid-template-columns: 1fr; } }
