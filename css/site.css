@@ -192,10 +192,6 @@ nav.main { display: flex; align-items: center; justify-content: space-between; h
 .practice-preview h2 { font-size: 38px; line-height: 1.32; }
 .practice-preview .body { font-size: 16px; color: var(--ink-2); margin: 18px 0 24px; line-height: 1.65; }
 .side-media { min-height: 320px; }
-.cta { padding: 8px 0 64px; }
-.cta .wrap > .split { border-top: 1px solid var(--border); padding-top: 64px; }
-.cta h2 { font-size: 36px; line-height: 1.32; }
-.cta p { font-size: 15px; color: var(--ink-2); margin: 14px 0 28px; line-height: 1.6; }
 
 /* footer */
 footer.legal { padding: 28px 0; }
