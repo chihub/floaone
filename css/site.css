@@ -2,7 +2,7 @@
    Derived from index_temp.html (approved homepage HTML).
    Type: Cormorant Garamond (headlines + numerals) · DM Sans (body, labels, wordmark)
    Width 1280px · 14px body baseline · accent appears once per section, never on body copy
-   Dark is the default theme; the toggle stores the visitor's choice. */
+   Light is the default theme; the toggle stores the visitor's choice. */
 
 :root, [data-theme="light"] {
   --ink: #1a1a18;

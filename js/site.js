@@ -1,4 +1,4 @@
-// Theme toggle (dark by default; the visitor's choice is remembered) and mobile menu.
+// Theme toggle (light by default; the visitor's choice is remembered) and mobile menu.
 (function () {
   var root = document.documentElement;
 
