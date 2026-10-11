@@ -251,7 +251,7 @@ footer.legal { padding: 28px 0; }
 /* work landing */
 .spine-note { max-width: var(--readw); font-family: var(--ff-serif); font-size: 24px; font-style: italic; line-height: 1.4; color: var(--ink); }
 .entries { display: flex; flex-direction: column; }
-.entry { display: grid; grid-template-columns: 260px 1fr 42%; gap: 40px; padding: 48px 0; border-top: 1px solid var(--border); align-items: start; }
+.entry { display: grid; grid-template-columns: 260px 1fr 42%; gap: 40px 56px; padding: 48px 0; border-top: 1px solid var(--border); align-items: start; }
 .entry .meta .co { font-family: var(--ff-serif); font-size: 30px; font-weight: 600; color: var(--ink); line-height: 1.1; }
 .entry .meta .role { font-size: 13px; color: var(--ink-2); margin-top: 8px; }
 .entry .meta .yrs { font-size: 12px; font-weight: 600; letter-spacing: 1px; color: var(--ink-3); margin-top: 4px; }
