@@ -32,17 +32,17 @@
         --maxw: 1280px;
       }
       [data-theme="dark"] {
-        --ink: #e8ebee;
-        --ink-2: #aeb6bf;
-        --ink-3: #7e8794;
-        --ground: #141b24;
-        --ground-2: #18202d;
-        --surface: #1a2434;
-        --border: #273242;
-        --border-2: #354357;
-        --accent: #7fa6c5;
-        --header-bg: rgba(20,27,36,0.8);
-        --media-border: rgba(53,67,87,0.3);
+        --ink: #eef1f6;
+        --ink-2: #a9b4c4;
+        --ink-3: #78859a;
+        --ground: #10192a;
+        --ground-2: #142238;
+        --surface: #16263f;
+        --border: #233a56;
+        --border-2: #32507a;
+        --accent: #6fa0d6;
+        --header-bg: rgba(16,25,42,0.8);
+        --media-border: rgba(50,80,122,0.3);
       }
       * { margin: 0; padding: 0; box-sizing: border-box; }
       html { -webkit-font-smoothing: antialiased; }
@@ -77,12 +77,14 @@
       .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2px; color: var(--accent); text-transform: uppercase; }
 
       main.hero { flex: 1; display: flex; align-items: center; padding: 48px 0; }
-      .hero-content { max-width: 640px; }
+      main.hero .wrap { display: flex; justify-content: center; }
+      .hero-content { width: 100%; max-width: 640px; margin: 0 auto; }
       .hero h1 { font-size: clamp(32px, 4.4vw, 46px); line-height: 1.12; margin: 22px 0 28px; }
       .hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
       .hero .lede { font-size: 17px; line-height: 1.65; color: var(--ink-2); margin-bottom: 22px; }
       .hero .body p { font-size: 15px; line-height: 1.7; color: var(--ink-2); margin-bottom: 20px; }
       .hero .body p:last-child { margin-bottom: 0; }
+      .footnote { font-size: 12px; color: var(--ink-3); margin-top: 40px; }
       .divider { width: 48px; height: 1px; background: var(--border-2); margin: 32px 0; }
 
       footer.legal { padding: 28px 0; }
@@ -115,14 +117,15 @@
       <div class="wrap">
         <div class="hero-content">
           <div class="eyebrow">Coming Soon</div>
-          <h1>Product &amp; <em>Design Leader</em></h1>
-          <p class="lede">I'm a product and design leader with 20+ years building products, teams, and UX strategy across Apple, Yahoo!, EA, and enterprise software companies. I've led teams that shipped products used by millions, across financial reporting, business intelligence, productivity tools, cloud services, and e-commerce.</p>
+          <h1>The record is <em>still being written.</em></h1>
+          <p class="lede">I'm a product and design leader with 20+ years building products, teams, and UX strategy across global technology and enterprise software companies. I've led teams that shipped products used by millions, across financial reporting, business intelligence, productivity tools, cloud services, and e-commerce.</p>
           <div class="divider"></div>
           <div class="body">
             <p>Most of my work is about connecting three things that often live apart: the experience people interact with, the design systems and operations behind it, and the business it&rsquo;s meant to serve.</p>
             <p>When those align, ambitious ideas can ship and keep working at scale. I&rsquo;ve done that through 15+ zero-to-one launches, cloud and AI transitions, global expansion, acquisitions, and rebrands, while building the teams and practices to make the results last.</p>
             <p>Good design is less about polish than clarity. I create systems that help people focus, make better decisions, and stay connected.</p>
           </div>
+          <p class="footnote">This site is currently in progress and will be launching in late 2026.</p>
         </div>
       </div>
     </main>
