@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://floa.one/</loc>
-  </url>
+  <url><loc>https://floa.one/</loc></url>
+  <url><loc>https://floa.one/about/</loc></url>
+  <url><loc>https://floa.one/work/</loc></url>
+  <url><loc>https://floa.one/work/workiva/</loc></url>
+  <url><loc>https://floa.one/work/apple-claris/</loc></url>
+  <url><loc>https://floa.one/work/thoughtspot/</loc></url>
+  <url><loc>https://floa.one/work/yahoo/</loc></url>
+  <url><loc>https://floa.one/practice/</loc></url>
+  <url><loc>https://floa.one/contact/</loc></url>
 </urlset>

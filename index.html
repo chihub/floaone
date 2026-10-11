@@ -3,169 +3,294 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta
-      name="description"
-      content="Floa.one — Chih Hsiao, product and design leader with 20+ years building systems that connect organizations at scale. Site coming soon."
-    />
-    <title>floa.one — Coming Soon</title>
+    <title>Chih Hsiao | floa.one</title>
+    <meta name="description" content="Chih Hsiao, product and design leader with 20+ years building systems that connect organizations at scale, across Apple, Yahoo!, EA, Acer, ThoughtSpot, and Workiva." />
     <link rel="canonical" href="https://floa.one/" />
-    <meta name="robots" content="index, follow" />
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://floa.one/" />
-    <meta property="og:title" content="floa.one — Coming Soon" />
-    <meta property="og:description" content="Chih Hsiao, product and design leader with 20+ years building systems that connect organizations at scale. Site coming soon." />
+    <meta property="og:title" content="Chih Hsiao | floa.one" />
+    <meta property="og:description" content="Twenty years of the same problem, in different rooms. Product and design leadership across Apple, Yahoo!, EA, Acer, ThoughtSpot, and Workiva." />
     <meta name="twitter:card" content="summary" />
-    <meta name="twitter:title" content="floa.one — Coming Soon" />
-    <meta name="twitter:description" content="Chih Hsiao, product and design leader with 20+ years building systems that connect organizations at scale. Site coming soon." />
     <script type="application/ld+json">
     {
       "@context": "https://schema.org",
       "@type": "Person",
       "name": "Chih Hsiao",
       "url": "https://floa.one/",
-      "jobTitle": "Product & Design Leader"
+      "jobTitle": "Product & Design Leader",
+      "sameAs": ["https://www.linkedin.com/in/chsiao"]
     }
     </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap"
-      rel="stylesheet"
-    />
-    <style>
-      :root, [data-theme="light"] {
-        --ink: #1a1a18;
-        --ink-2: #45433d;
-        --ink-3: #6f6c64;
-        --ground: #f8f7f3;
-        --ground-2: #efede7;
-        --surface: #f8f8f6;
-        --border: #ddd9cf;
-        --border-2: #b6b1a4;
-        --accent: #208a3d;
-        --header-bg: rgba(248,247,243,0.8);
-        --media-border: rgba(182,177,164,0.3);
-        --ff-serif: "Cormorant Garamond", Georgia, serif;
-        --ff-sans: "DM Sans", "SF Pro Text", "Helvetica Neue", Arial, sans-serif;
-        --maxw: 1280px;
-      }
-      [data-theme="dark"] {
-        --ink: #eef1f6;
-        --ink-2: #a9b4c4;
-        --ink-3: #78859a;
-        --ground: #10192a;
-        --ground-2: #142238;
-        --surface: #16263f;
-        --border: #233a56;
-        --border-2: #32507a;
-        --accent: #6fa0d6;
-        --header-bg: rgba(16,25,42,0.8);
-        --media-border: rgba(50,80,122,0.3);
-      }
-      * { margin: 0; padding: 0; box-sizing: border-box; }
-      html { -webkit-font-smoothing: antialiased; }
-      body {
-        font-family: var(--ff-sans);
-        font-size: 14px;
-        font-weight: 400;
-        line-height: 1.65;
-        letter-spacing: 0.2px;
-        color: var(--ink-2);
-        background: var(--ground);
-        transition: background 0.3s ease, color 0.3s ease;
-        min-height: 100vh;
-        display: flex;
-        flex-direction: column;
-      }
-      .wrap { max-width: var(--maxw); margin: 0 auto; padding: 0 40px; width: 100%; }
-      h1 { font-family: var(--ff-serif); font-weight: 600; color: var(--ink); letter-spacing: -0.2px; }
-      a { color: inherit; text-decoration: none; }
-
-      header {
-        border-bottom: 1px solid var(--border);
-      }
-      nav { display: flex; align-items: center; justify-content: space-between; height: 64px; }
-      .wordmark { font-family: var(--ff-serif); font-size: 24px; font-weight: 600; letter-spacing: 0; color: var(--ink); }
-      .theme-toggle { display: inline-flex; align-items: center; justify-content: center; color: var(--ink-3); background: transparent; border: 0; padding: 4px; cursor: pointer; transition: color 0.15s; }
-      .theme-toggle:hover { color: var(--ink); }
-      .theme-toggle svg { display: block; }
-      [data-theme="light"] .theme-toggle .icon-sun { display: none; }
-      [data-theme="dark"] .theme-toggle .icon-moon { display: none; }
-
-      .eyebrow { font-size: 12px; font-weight: 600; letter-spacing: 2px; color: var(--accent); text-transform: uppercase; }
-
-      main.hero { flex: 1; display: flex; align-items: center; padding: 48px 0; }
-      main.hero .wrap { display: flex; justify-content: center; }
-      .hero-content { width: 100%; max-width: 640px; margin: 0 auto; }
-      .hero h1 { font-size: clamp(32px, 4.4vw, 46px); line-height: 1.12; margin: 22px 0 28px; }
-      .hero h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
-      .hero .lede { font-size: 17px; line-height: 1.65; color: var(--ink-2); margin-bottom: 22px; }
-      .hero .body p { font-size: 15px; line-height: 1.7; color: var(--ink-2); margin-bottom: 20px; }
-      .hero .body p:last-child { margin-bottom: 0; }
-      .footnote { font-size: 12px; color: var(--ink-3); margin-top: 40px; }
-      .divider { width: 48px; height: 1px; background: var(--border-2); margin: 32px 0; }
-
-      footer.legal { padding: 28px 0; }
-      .legal-row { display: flex; justify-content: space-between; align-items: center; border-top: 1px solid var(--border); padding-top: 22px; font-size: 12px; color: var(--ink-3); }
-      .footer-toggle { display: inline-flex; align-items: center; color: var(--ink-3); background: transparent; border: 0; padding: 0; cursor: pointer; transition: color 0.15s; }
-      .footer-toggle:hover { color: var(--ink); }
-      .footer-toggle svg { display: block; }
-      [data-theme="light"] .footer-toggle .icon-sun { display: none; }
-      [data-theme="dark"] .footer-toggle .icon-moon { display: none; }
-
-      @media (max-width: 900px) {
-        .wrap { padding: 0 24px; }
-      }
-    </style>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=DM+Sans:opsz,wght@9..40,400;9..40,500;9..40,600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/site.css" />
+    <script>try{var t=localStorage.getItem("theme");if(t)document.documentElement.setAttribute("data-theme",t)}catch(e){}</script>
   </head>
   <body>
-    <header>
+    <a class="skip" href="#main">Skip to content</a>
+    <header class="site">
       <div class="wrap">
-        <nav>
-          <a href="#" class="wordmark">floa.one</a>
-          <button class="theme-toggle" onclick="toggleTheme()" aria-label="Toggle light and dark mode">
-            <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-            <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2"/></svg>
-          </button>
+        <nav class="main" aria-label="Main">
+          <a href="/" class="wordmark">floa.one</a>
+          <div class="nav-end">
+            <div class="nav-links" id="nav-links">
+              <a href="/about/">About</a>
+              <a href="/work/">Work</a>
+              <a href="/practice/">Practice</a>
+              <a href="/contact/">Contact</a>
+            </div>
+            <button class="theme-toggle" aria-label="Toggle light and dark mode">
+              <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+              <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2"/></svg>
+            </button>
+            <button class="menu-toggle" aria-controls="nav-links" aria-expanded="false" aria-label="Menu">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+            </button>
+          </div>
         </nav>
       </div>
     </header>
 
-    <main class="hero">
-      <div class="wrap">
-        <div class="hero-content">
-          <div class="eyebrow">Coming Soon</div>
-          <h1>The record is <em>still being written.</em></h1>
-          <p class="lede">I'm a product and design leader with 20+ years building products, teams, and UX strategy across global technology and enterprise software companies. I've led teams that shipped products used by millions, across financial reporting, business intelligence, productivity tools, cloud services, and e-commerce.</p>
-          <div class="divider"></div>
-          <div class="body">
-            <p>Most of my work is about connecting three things that often live apart: the experience people interact with, the design systems and operations behind it, and the business it&rsquo;s meant to serve.</p>
-            <p>When those align, ambitious ideas can ship and keep working at scale. I&rsquo;ve done that through 15+ zero-to-one launches, cloud and AI transformations, global expansion, acquisitions, and rebrands, while building the teams and practices to make the results last.</p>
-            <p>Good design is less about polish than clarity. I create systems that help people focus, make better decisions, and stay connected.</p>
+    <main id="main">
+      <!-- HERO -->
+      <section class="hero">
+        <div class="wrap">
+          <div class="hero-cols">
+            <div class="hero-content">
+              <div class="eyebrow">Design leadership. Systems thinking. Business impact.</div>
+              <h1>Twenty years of the same problem, <em>in different rooms.</em></h1>
+              <p class="lede">I lead design at the level where complexity becomes structure. Systems before surfaces, and what changed measured over what shipped.</p>
+              <div class="hero-cta">
+                <a href="/work/" class="btn btn-dark">Explore my work &#8599;</a>
+                <a href="/practice/" class="btn btn-ghost">Learn my practice &#8599;</a>
+              </div>
+            </div>
+            <div class="media hero-media"><span class="ph">Image</span></div>
           </div>
-          <p class="footnote">This site is currently in progress and will be launching in late 2026.</p>
+          <div class="spine">
+            <div class="spine-row">
+              <div class="logo-slot"><span class="ph">APPLE</span></div>
+              <div class="logo-slot"><span class="ph">YAHOO!</span></div>
+              <div class="logo-slot"><span class="ph">EA</span></div>
+              <div class="logo-slot"><span class="ph">ACER</span></div>
+              <div class="logo-slot"><span class="ph">THOUGHTSPOT</span></div>
+              <div class="logo-slot"><span class="ph">WORKIVA</span></div>
+            </div>
+          </div>
         </div>
-      </div>
+      </section>
+
+      <!-- LEADERSHIP PILLARS -->
+      <section class="pillars">
+        <div class="wrap">
+          <div class="pillars-grid">
+            <div class="pillar">
+              <div class="head"><span class="num">01</span><h3>Strategy into execution</h3></div>
+              <p>At Apple/Claris, a packaged product more than 30 years old became a cloud platform across 16 countries and 12+ languages. Eight years, six products from zero to one, one coherent system, held together by a design function built to sustain it.</p>
+            </div>
+            <div class="pillar">
+              <div class="head"><span class="num">02</span><h3>Platforms that grow</h3></div>
+              <p>At ThoughtSpot, a platform design function built with engineering, not beside it: 140+ components and 12K weekly Figma activities, sustained by 8+ feature teams because the system made their work easier, not because anyone was told to use it.</p>
+            </div>
+            <div class="pillar">
+              <div class="head"><span class="num">03</span><h3>Connection by design</h3></div>
+              <p>At Yahoo!, a cross-vertical team set one navigation rule to unify a decade of disconnected surfaces, and I led the design of the surface that rule depended on most. Search touches every vertical, so making it move by the shared rule was the connection that held the platform together. The hardest part to fit is the part that proves the whole thing works.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ENTERPRISE IMPACT -->
+      <section class="impact">
+        <div class="wrap">
+          <div class="tl-eyebrow">Twenty years, one discipline</div>
+          <h2 class="tl-titleline">Six companies. The same work each time.</h2>
+
+          <div class="tl-h" role="img" aria-label="Career timeline: Electronic Arts 2004 to 2010, Acer iGware 2010 to 2011, Yahoo 2011 to 2012, Apple Claris 2012 to 2019, ThoughtSpot 2020 to 2022, Workiva 2022 to present.">
+            <div class="tl-stations">
+              <div class="tl-station"><div class="body"><div class="yr">2004</div><div class="co">Electronic Arts</div><div class="meta">Senior UX Designer<br>13M global MAU</div></div><div class="dot"></div></div>
+              <div class="tl-station"><div class="body"><div class="yr">2010</div><div class="co">Acer / iGware</div><div class="meta">Senior UX Designer<br>Acquisition-stage</div></div><div class="dot"></div></div>
+              <div class="tl-station"><div class="body"><div class="yr">2011</div><div class="co">Yahoo!</div><div class="meta">Design Lead, Search<br>$40M quarterly revenue growth · global nav revamp</div></div><div class="dot"></div></div>
+              <div class="tl-station"><div class="body"><div class="yr">2012</div><div class="co">Apple / Claris</div><div class="meta">Design Manager<br>16 countries, 12+ languages</div></div><div class="dot"></div></div>
+              <div class="tl-station"><div class="body"><div class="yr">2020</div><div class="co">ThoughtSpot</div><div class="meta">Director of Platform Design<br>140+ components</div></div><div class="dot"></div></div>
+              <div class="tl-station now"><div class="body"><div class="yr">2022~</div><div class="co">Workiva</div><div class="meta">Senior UX Manager<br>85% of the Fortune 1000</div></div><div class="dot"></div></div>
+            </div>
+            <div class="line"></div>
+          </div>
+
+          <div class="tl-v">
+            <ul>
+              <li><span class="dot"></span><div class="yr">2004</div><div class="co">Electronic Arts</div><div class="meta">Senior UX Designer · 13M global MAU</div></li>
+              <li><span class="dot"></span><div class="yr">2010</div><div class="co">Acer / iGware</div><div class="meta">Senior UX Designer · acquisition-stage</div></li>
+              <li><span class="dot"></span><div class="yr">2011</div><div class="co">Yahoo!</div><div class="meta">Design Lead, Search · $40M quarterly revenue growth, global nav revamp</div></li>
+              <li><span class="dot"></span><div class="yr">2012</div><div class="co">Apple / Claris</div><div class="meta">Design Manager · 16 countries, 12+ languages</div></li>
+              <li><span class="dot"></span><div class="yr">2020</div><div class="co">ThoughtSpot</div><div class="meta">Director of Platform Design · 140+ components</div></li>
+              <li class="now"><span class="dot"></span><div class="yr">2022~</div><div class="co">Workiva</div><div class="meta">Senior UX Manager · 85% of the Fortune 1000</div></li>
+            </ul>
+          </div>
+
+          <div class="impact-stats">
+            <div class="stat"><div class="n">20+</div><div class="l">Years of experience</div></div>
+            <div class="stat"><div class="n">15+</div><div class="l">Product launches</div></div>
+            <div class="stat"><div class="n">85%</div><div class="l">of the Fortune 1000</div></div>
+            <div class="stat"><div class="n">13M</div><div class="l">Monthly active users</div></div>
+            <div class="stat"><div class="n">$40M</div><div class="l">Quarterly revenue growth</div></div>
+          </div>
+          <div class="impact-cols">
+            <div class="impact-col">
+              <h4>Reach</h4>
+              <p>Products used by millions, across enterprise software, financial reporting, business intelligence, productivity platforms, cloud services, and e-commerce. Designed across the surfaces they run on: web, desktop, mobile, and TV.</p>
+            </div>
+            <div class="impact-col">
+              <h4>Teams</h4>
+              <p>Teams led across three continents, from Europe and Asia to Silicon Valley, building design functions that held coherent across 10+ agile teams and 150+ engineers.</p>
+            </div>
+            <div class="impact-col">
+              <h4>Method</h4>
+              <p>Six companies, multiple domains, two decades, and the same discipline applied each time: find where the work has fragmented, then build the system that connects it back together.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FEATURED WORK -->
+      <section class="work" id="work">
+        <div class="wrap">
+          <div class="work-head">
+            <div>
+              <div class="eyebrow">Featured work</div>
+              <h2>The work</h2>
+              <div class="sub">Four chapters of the same argument: find the fragmentation, build the system that connects it.</div>
+            </div>
+            <a href="/work/">View all work &#8599;</a>
+          </div>
+          <div class="work-rows">
+            <div class="work-row">
+              <div class="work-card">
+                <div class="num">01</div>
+                <div class="co">Workiva</div>
+                <h3>Enterprise Reporting for the Fortune 1000</h3>
+                <div class="deck">Leading product UX across Financial Reporting, GRC, and Sustainability.</div>
+                <div class="label">Background</div>
+                <p>Leading product UX across Financial Reporting, GRC, and Sustainability for 85% of the Fortune 1000, a team of 7 across 10+ agile teams and 150+ engineers.</p>
+                <a href="/work/workiva/" class="link-pill">Read the case study &#8599;</a>
+              </div>
+              <div class="media"><span class="ph">Image</span></div>
+            </div>
+
+            <div class="work-row right">
+              <div class="work-card">
+                <div class="num">02</div>
+                <div class="co">Apple / Claris</div>
+                <h3>An ecosystem, from on-prem to cloud</h3>
+                <div class="deck">Transforming a development platform more than 30 years old into a cloud-native ecosystem.</div>
+                <div class="label">Background</div>
+                <p>A development platform more than 30 years old, transformed into a cloud-native SaaS ecosystem. Eight years, six products from zero to one, 16 countries, 12+ languages.</p>
+                <a href="/work/apple-claris/" class="link-pill">Read the case study &#8599;</a>
+              </div>
+              <div class="media"><span class="ph">Image</span></div>
+            </div>
+
+            <div class="work-row">
+              <div class="work-card">
+                <div class="num">03</div>
+                <div class="co">ThoughtSpot</div>
+                <h3>Bridging Design and Engineering</h3>
+                <div class="deck">A platform design function built with engineering, not beside it.</div>
+                <div class="label">Background</div>
+                <p>A platform design function built with engineering: team, toolchain, component library, governance. The system outlasted the tenure.</p>
+                <a href="/work/thoughtspot/" class="link-pill">Read the case study &#8599;</a>
+              </div>
+              <div class="media"><span class="ph">Image</span></div>
+            </div>
+
+            <div class="work-row right">
+              <div class="work-card">
+                <div class="num">04</div>
+                <div class="co">Yahoo!</div>
+                <h3>One Yahoo!, across every surface</h3>
+                <div class="deck">Leading the Search design that became the connective layer.</div>
+                <div class="label">Background</div>
+                <p>A decade of disconnected surfaces unified into one platform language. I led the Search design that became the connection tying the verticals together.</p>
+                <a href="/work/yahoo/" class="link-pill">Read the case study &#8599;</a>
+              </div>
+              <div class="media"><span class="ph">Image</span></div>
+            </div>
+          </div>
+
+          <div class="notable">
+            <div class="notable-head">
+              <div class="t">Notable projects</div>
+              <a href="/work/#notable">Notable projects &#8599;</a>
+            </div>
+            <div class="notable-grid">
+              <div class="notable-item">
+                <div class="co">Electronic Arts</div>
+                <h4>Market entry, China</h4>
+                <p>Launched EA's first gaming platform in China and scaled the team from 15 to 200+. The platform reached 13M global monthly active users across five countries.</p>
+              </div>
+              <div class="notable-item">
+                <div class="co">Acer / iGware</div>
+                <h4>Cloud gaming, into acquisition</h4>
+                <p>Cloud gaming and multi-device commerce UX across web, desktop, and TV, work that contributed to the company's acquisition by Acer.</p>
+              </div>
+              <div class="notable-item">
+                <div class="co">Agency &amp; client work</div>
+                <h4>Where the instinct started</h4>
+                <p>Advertising and agency work, before and between the product roles, where the discipline of clarity under ambiguity was first trained.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PRACTICE PREVIEW -->
+      <section class="practice-preview" id="practice">
+        <div class="wrap">
+          <div class="split">
+            <div>
+              <h2>What the case studies don't show.</h2>
+              <p class="body">The case studies show what shipped. This page shows the reasoning underneath: how an organization gets read, where the real problem usually hides, and how a system gets built so good decisions keep happening after the designer leaves the room. The clearest signal of how someone will work is how they think. That's here.</p>
+              <a href="/practice/" class="link-pill">Explore the practice &#8599;</a>
+            </div>
+            <div class="media side-media"><span class="ph">Image</span></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- FOOTER CTA -->
+      <section class="cta" id="contact">
+        <div class="wrap">
+          <div class="split">
+            <div>
+              <h2>The argument's been made. Let's talk about the work.</h2>
+              <p>Most interested in leading a design organization through the kind of transformation these pages describe, in a senior leadership role. Also open to consulting when the problem is the right one.</p>
+              <a href="/contact/" class="btn btn-dark">Get in touch &#8599;</a>
+            </div>
+            <div class="media side-media"><span class="ph">Image</span></div>
+          </div>
+        </div>
+      </section>
     </main>
 
     <footer class="legal">
       <div class="wrap">
         <div class="legal-row">
           <span>2026 &copy; floa.one</span>
-          <button class="footer-toggle" onclick="toggleTheme()" aria-label="Toggle light and dark mode">
-            <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
-            <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2"/></svg>
-          </button>
+          <div class="links">
+            <a href="/about/">About</a>
+            <a href="/work/">Work</a>
+            <a href="/practice/">Practice</a>
+            <a href="/contact/">Contact</a>
+            <button class="theme-toggle" aria-label="Toggle light and dark mode">
+              <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+              <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2"/></svg>
+            </button>
+          </div>
         </div>
       </div>
     </footer>
-
-    <script>
-      function toggleTheme() {
-        var root = document.documentElement;
-        var next = root.getAttribute("data-theme") === "dark" ? "light" : "dark";
-        root.setAttribute("data-theme", next);
-      }
-    </script>
+    <script src="/js/site.js"></script>
   </body>
 </html>
