@@ -13,7 +13,7 @@
   --surface: #f8f8f6;
   --border: #ddd9cf;
   --border-2: #b6b1a4;
-  --accent: #208a3d;
+  --accent: #1b7a35;
   --header-bg: rgba(248,247,243,0.8);
   --work-bg: #f2f2ef;
   --media-bg: #efede7;
@@ -121,7 +121,7 @@ nav.main { display: flex; align-items: center; justify-content: space-between; h
 .stat .l { font-size: 12px; font-weight: 500; letter-spacing: 1px; color: var(--ink-3); margin-top: 8px; text-transform: uppercase; }
 .impact-eyebrow { margin-bottom: 24px; }
 .impact-cols { display: grid; grid-template-columns: repeat(3, 1fr); gap: 40px; }
-.impact-col h4 { font-family: var(--ff-sans); font-size: 14px; font-weight: 600; letter-spacing: 1px; color: var(--ink); text-transform: uppercase; margin-bottom: 12px; }
+.impact-col h3 { font-family: var(--ff-sans); font-size: 14px; font-weight: 600; letter-spacing: 1px; color: var(--ink); text-transform: uppercase; margin-bottom: 12px; }
 .impact-col p { font-size: 14px; color: var(--ink-2); line-height: 1.65; }
 .impact-col .media { min-height: 200px; margin-bottom: 24px; }
 
@@ -357,3 +357,15 @@ html.has-scroll-smooth .section-grid > .label-col h2 { position: static; }
 /* case study back link */
 .back-link { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 28px; font-size: 13px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-3); transition: color 0.15s; }
 .back-link:hover { color: var(--accent); }
+
+/* small-caps labels that are real headings (keeps the outline valid) */
+h2.eyebrow { font-family: var(--ff-sans); font-size: 12px; font-weight: 600; line-height: normal; }
+.section-grid > .label-col h2.eyebrow { font-size: 12px; margin-top: 0; top: 96px; line-height: normal; }
+
+/* minimum 24px tap targets (WCAG 2.2, 2.5.8) for standalone small links and the footer toggle */
+.work-head a, .back-link, .legal .links a { min-height: 24px; }
+.legal .links a { display: inline-flex; align-items: center; }
+.legal .theme-toggle { min-width: 24px; min-height: 24px; }
+
+/* Practice section numbers */
+.eyebrow.sec-num { font-size: 20px; letter-spacing: 1.5px; line-height: 1; }
