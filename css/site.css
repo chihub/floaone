@@ -106,7 +106,7 @@ nav.main { display: flex; align-items: center; justify-content: space-between; h
 .logo-slot .ph { font-weight: 600; letter-spacing: 2px; }
 
 /* pillars */
-.pillars { padding: 72px 0 24px; }
+.pillars { padding: 72px 0; }
 .pillars-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 1px; background: var(--border); border: 1px solid var(--border); border-radius: 12px; overflow: hidden; }
 .pillar { background: var(--surface); padding: 32px 30px; }
 .pillar .head { display: flex; align-items: baseline; gap: 12px; margin-bottom: 12px; }
