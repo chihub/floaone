@@ -39,6 +39,14 @@
 
   var headerOffset = -80;
 
+  // Locomotive moves the content itself, so the window must stay at the top. The browser
+  // still scrolls the window natively for a #hash in the URL, back/forward restoration, or
+  // find-in-page, and that stacks on top of Locomotive's offset and leaves a blank screen.
+  if ("scrollRestoration" in history) history.scrollRestoration = "manual";
+  function pinWindow() { if (window.scrollY || window.scrollX) window.scrollTo(0, 0); }
+  pinWindow();
+  window.addEventListener("scroll", pinWindow);
+
   // In-page anchors (#notable, the Practice contents, the skip link) go through the scroller.
   document.addEventListener("click", function (e) {
     var a = e.target.closest && e.target.closest('a[href*="#"]');
@@ -58,6 +66,7 @@
   function refresh() { scroll.update(); }
   if (document.fonts && document.fonts.ready) document.fonts.ready.then(refresh);
   window.addEventListener("load", function () {
+    pinWindow();
     refresh();
     if (location.hash) {
       var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
