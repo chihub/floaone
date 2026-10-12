@@ -23,8 +23,9 @@
     });
   }
 
-  // Smooth scrolling. Phones and tablets keep native scrolling (Locomotive's default),
-  // and so does anyone who has asked their system for reduced motion.
+  // Smooth scrolling. Phones and tablets keep native scrolling (Locomotive detects them by
+  // device, not width), and so does anyone who has asked their system for reduced motion.
+  // A narrow desktop window still gets smooth scrolling.
   var container = document.querySelector("[data-scroll-container]");
   var reduced = window.matchMedia && window.matchMedia("(prefers-reduced-motion: reduce)").matches;
   if (!container || reduced || typeof LocomotiveScroll === "undefined") return;
@@ -32,7 +33,8 @@
   var scroll = new LocomotiveScroll({
     el: container,
     smooth: true,
-    lerp: 0.09
+    lerp: 0.09,
+    tablet: { breakpoint: 0 }
   });
 
   var headerOffset = -80;

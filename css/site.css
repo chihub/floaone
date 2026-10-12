@@ -256,8 +256,8 @@ footer.legal { padding: 28px 0; }
 .spine-note { max-width: var(--readw); font-family: var(--ff-serif); font-size: 24px; font-style: italic; line-height: 1.4; color: var(--ink); }
 .entries { display: flex; flex-direction: column; }
 .entry { display: grid; grid-template-columns: 208px 1fr 33.6%; gap: 40px 56px; padding: 48px 0; border-top: 1px solid var(--border); align-items: start; }
-.entry .meta .co { font-family: var(--ff-serif); font-size: 30px; font-weight: 600; color: var(--ink); line-height: 1.1; }
-.entry .meta .role { font-size: 13px; color: var(--ink-2); margin-top: 8px; }
+.entry .meta .co, .label-col.meta .co { font-family: var(--ff-serif); font-size: 30px; font-weight: 600; color: var(--ink); line-height: 1.1; }
+.entry .meta .role, .label-col.meta .role { font-size: 13px; color: var(--ink-2); margin-top: 8px; }
 .entry .meta .yrs { font-size: 12px; font-weight: 600; letter-spacing: 1px; color: var(--ink-3); margin-top: 4px; }
 .entry .kicker { font-family: var(--ff-serif); font-size: 22px; font-style: italic; color: var(--ink); line-height: 1.3; margin-bottom: 14px; }
 .entry .body p { font-size: 15px; line-height: 1.7; color: var(--ink-2); }
@@ -282,6 +282,7 @@ footer.legal { padding: 28px 0; }
 /* about */
 .cards-2 { display: grid; grid-template-columns: repeat(2, 1fr); gap: 32px 48px; margin-top: 32px; max-width: 980px; }
 .cards-2 .k { font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; }
+.cards-2.cards-3 { grid-template-columns: repeat(3, 1fr); max-width: none; }
 .cards-2 h3 { font-size: 24px; line-height: 1.2; margin-bottom: 8px; }
 .cards-2 p { font-size: 15px; line-height: 1.7; color: var(--ink-2); }
 
@@ -323,7 +324,7 @@ footer.legal { padding: 28px 0; }
   .outcome-table .row { grid-template-columns: 1fr; gap: 6px; }
   .next-case .t { font-size: 26px; }
   .entry, .entry.notable-entry { grid-template-columns: 1fr; gap: 20px; padding: 40px 0; }
-  .principles, .cards-2 { grid-template-columns: 1fr; }
+  .principles, .cards-2, .cards-2.cards-3 { grid-template-columns: 1fr; }
   .legal-row { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 480px) {
@@ -342,12 +343,6 @@ html.has-scroll-smooth .section-grid > .label-col h2 { position: static; }
 .c-scrollbar_thumb { background-color: var(--ink-3); opacity: 0.45; width: 6px; margin: 2px; }
 
 /* about: contact details */
-.contact-list { display: grid; grid-template-columns: repeat(3, 1fr); gap: 32px 48px; margin-top: 32px; max-width: 980px; }
-.contact-list .k { font-size: 12px; font-weight: 600; letter-spacing: 1.5px; text-transform: uppercase; color: var(--ink-3); margin-bottom: 8px; }
-.contact-list a.v { font-family: var(--ff-serif); font-size: 24px; font-weight: 600; color: var(--ink); border-bottom: 1px solid var(--border-2); transition: color 0.15s, border-color 0.15s; word-break: break-word; }
-.contact-list a.v:hover { color: var(--accent); border-color: var(--accent); }
-.contact-list p { font-size: 15px; line-height: 1.6; color: var(--ink-2); }
-@media (max-width: 900px) { .contact-list { grid-template-columns: 1fr; } }
 
 /* hero proof line */
 .hero-proof { font-size: 13px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-3); line-height: 1.6; margin: -8px 0 28px; }
@@ -358,3 +353,7 @@ html.has-scroll-smooth .section-grid > .label-col h2 { position: static; }
 .contact-cta h2 em { font-style: italic; color: var(--accent); font-weight: 400; }
 .contact-cta .body { font-size: 16px; color: var(--ink-2); line-height: 1.65; margin: 18px 0 28px; max-width: var(--readw); }
 @media (max-width: 720px) { .contact-cta h2 { font-size: 28px; } }
+
+/* case study back link */
+.back-link { display: inline-flex; align-items: center; gap: 8px; margin-bottom: 28px; font-size: 13px; font-weight: 500; letter-spacing: 0.3px; color: var(--ink-3); transition: color 0.15s; }
+.back-link:hover { color: var(--accent); }

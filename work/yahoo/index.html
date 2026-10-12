@@ -30,7 +30,6 @@
               <a href="/work/" aria-current="page">Work</a>
               <a href="/practice/">Practice</a>
               <a href="/about/">About</a>
-              <a href="/about/#contact">Contact</a>
             </div>
             <button class="theme-toggle" aria-label="Toggle light and dark mode">
               <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
@@ -49,9 +48,10 @@
       <section class="page-head">
         <div class="wrap">
           <div class="inner">
+            <a href="/work/" class="back-link"><span aria-hidden="true">&#8592;</span> Back to Work</a>
             <div class="eyebrow">Yahoo! · Design Lead, Search · 2011 — 2012</div>
             <h1>The connection that held the verticals together.</h1>
-            <p class="standfirst">Yahoo! in 2011 was redesigning itself around one idea: a decade of separate surfaces made to behave as a single platform. A cross-vertical team set the navigation model that would unify them. I led Search design on that team, and Search was the hardest surface to fit, because it is where a user arrives with a question and no place to be yet. The framework I designed connected searching, reading, and discovering into one experience that moved by the same rule as everything else.</p>
+            <p class="standfirst">Yahoo! in 2011 was redesigning itself around one idea: a decade of separate surfaces made to behave as a single platform. A cross-vertical team set the navigation model that would unify them. I led Search design on that team, and Search was the hardest surface to fit, because it is where a user arrives with a question and no place to be yet.</p>
           </div>
           <div class="figure wide"><div class="media" data-image="yahoo-p47-search-overview"><span class="ph">Image</span></div></div>
         </div>
@@ -61,7 +61,7 @@
         <div class="wrap section-grid">
           <div class="label-col"><span class="eyebrow">The throughline</span></div>
           <div class="prose">
-            <p>The company was unifying. After a decade of surfaces grown on their own schedules, the redesign set out to make Yahoo! move like one platform, governed by a single navigation rule the whole team built: horizontal across interests, vertical for more of the same, the same on every screen and every property. That rule was the team's. The hardest job inside it was mine. Search is not one more surface to fit, it is the surface that touches all the others, because a search can land a user in any vertical, news, finance, sports, any topic on the platform. Integrating it was never about a results page. It was about making the connective layer between search and every vertical move by the same rule, so that a query in one place could open coherently into content owned by another. Leading Search design meant owning that connection across the platform, the part where the unified experience either held together or came apart. Get it right and the redesign's promise reached the surface most users started from. Get it wrong and the seams reopened everywhere search touched, which was everywhere.</p>
+            <p>After a decade of surfaces grown on their own schedules, the redesign set out to make Yahoo! move like one platform, governed by a single navigation rule: horizontal across interests, vertical for more of the same, identical on every screen and every property. The team built that rule. I owned the surface that tested it hardest. A search can land a user in any vertical, news, finance, sports, any topic on the platform, so Search is not one more surface to fit. It is the layer that touches all the others. If it moved by the shared rule, the redesign reached the place most users started from. If it did not, the seams reopened everywhere search touched.</p>
           </div>
         </div>
       </section>
@@ -78,10 +78,10 @@
           <div class="label-col"><h2>The problem</h2></div>
           <div>
             <div class="prose">
-              <p>Search was the surface that fit the shared rule worst, and the reason is that search is not really one surface. It is the connection between all of them. A user searches and lands in news, in finance, in sports, in any topic on the platform, which means search has to hand off cleanly into content every other vertical owns. The redesign asked every property to move the same way, horizontal across interests, vertical for more of the same, but search begins before a user has an interest at all, with a query and no place yet. The old search made the gap worse: it returned a page of links disconnected from whatever the user had been reading, and dropped them out of the content stream the redesign was building everywhere else. So the problem was never the results page in isolation. It was the connective layer between search and every vertical, the part that decided whether a query opened coherently into the rest of the platform or stopped dead in a list. That layer touched the whole company, and it was the layer that did not yet exist.</p>
+              <p>The redesign asked every property to move the same way, but search begins before a user has an interest at all, with a query and no place yet. The old search made the gap worse: it returned a page of links disconnected from whatever the user had been reading, and dropped them out of the content stream the redesign was building everywhere else. The problem was never the results page. It was the missing layer between search and the content every other vertical owned.</p>
             </div>
             <div class="figure"><div class="media" data-image="yahoo-p31-break-the-home"><span class="ph">Image</span></div></div>
-            <blockquote class="pull"><p>Search was not one surface to fix. It was the connection between all of them, and the connection did not yet exist.</p></blockquote>
+            <blockquote class="pull"><p>Every other surface starts with a place. Search starts with a question.</p></blockquote>
           </div>
         </div>
       </section>
@@ -91,7 +91,7 @@
           <div class="label-col"><h2>The response</h2></div>
           <div>
             <div class="prose">
-              <p>The team set the rule first, and the rule is the context everything else sits in. One navigation model to hold across every surface: horizontal movement navigates across interests, vertical gives more of the same within one, carried on two levels. The Base Level held interest landing pages arranged left to right; the River Level held the content cards a user reads within an interest. One rule, two levels, every property and device the same, stress tested against real user stories and four screen sizes before anything was built on top of it. That was the platform my work had to join. The question I owned was narrower and harder: how does search, which starts before a user has any interest at all, live inside a rule built entirely around interests.</p>
+              <p>The rule came first. Horizontal movement navigates across interests, and vertical gives more of the same within one, carried on two levels: the Base Level held interest landing pages arranged left to right, and the River Level held the content cards a user reads within an interest. The team stress tested it against real user stories and four screen sizes before anything was built on top of it. My question was narrower and harder: how does search, which starts before a user has any interest at all, live inside a rule built entirely around interests?</p>
             </div>
             <div class="figure-pair">
               <div class="media" data-image="yahoo-p8-base-river-levels"><span class="ph">Image</span></div>
@@ -106,9 +106,9 @@
           <div class="label-col"><h2>What the team built</h2></div>
           <div>
             <div class="prose">
-              <p>Two things lived on top of the rule: the content system the team built, and the search framework I led. The content system named six card archetypes as the building blocks of every river, a Landing card, an Article card, a Photo Gallery card, a Video Gallery card, an Ad card, and a List card, and the team proved the set worked by visualizing three full interest rivers of completely different shapes, a 49ers river, a Natalie Portman river, a Snowboarding river, all built from the same six pieces. That was the platform's shared vocabulary, and Search had to speak it.</p>
-              <p>Leading Search design meant building that connective layer, the part of the platform where search met every other vertical. The framework I designed treated a search not as a detour out of the platform but as a way into all of it. Four parts did the work, and the connection between verticals ran through each. A mixed source results page drew web, Yahoo! content, and publishers into one view instead of separate silos, so a single query reached across the platform's content rather than one slice of it. A context aware search box shaped results around where the user already was, so the query inherited the user's place instead of ignoring it. Search generated contextual content turned any result into a doorway into a topic river, which is the move that connects search to every vertical: a search becomes an interest, and from there the user moves into content another team owns, by the same horizontal and vertical rule as everywhere else. And search navigation through an Interest Store let a search be saved and followed, so a one time query could become a standing interest anywhere on the platform.</p>
-              <p>Three principles held it together, written to be lived rather than filed: discovery as the governing force, the sense that there is always next and more and curiosities around the corner; satisfaction and curiosity, serving the user who knows exactly what they want and the one who does not; and curation, branching, and infinite browsing, giving the user control over the stream. Carried across tablet, browser, and phone by the same rule as the rest of the platform, search stopped being a place a user left the product to use, and became the connection that held the verticals together at the point most users started from.</p>
+              <p>Two things sat on top of the rule: the team's content system and the search framework I led. The content system named six card archetypes as the building blocks of every river, Landing, Article, Photo Gallery, Video Gallery, Ad, and List, and the team proved the set by building three very different rivers, a 49ers river, a Natalie Portman river, a Snowboarding river, from the same six pieces. That was the platform's shared vocabulary, and Search had to speak it.</p>
+              <p>The framework I designed treated a search as a way into the platform rather than a detour out of it, in four parts. A mixed source results page drew web, Yahoo! content, and publishers into one view, so a single query reached across the platform's content. A context aware search box shaped results around where the user already was. Search generated contextual content turned any result into a doorway into a topic river, so a search became an interest and the user moved on by the same horizontal and vertical rule as everywhere else. And search navigation through an Interest Store let a search be saved and followed, turning a one time query into a standing interest.</p>
+              <p>Three principles held it together: discovery as the governing force, the sense that there is always something next; satisfaction and curiosity, serving the user who knows exactly what they want and the one who does not; and curation, branching, and infinite browsing, giving the user control over the stream. Carried across tablet, browser, and phone, search became a way to move through the product instead of a place to leave it.</p>
             </div>
             <div class="figure"><div class="media" data-image="yahoo-p28-card-archetypes"><span class="ph">Image</span></div></div>
           </div>
@@ -120,7 +120,7 @@
           <div class="label-col"><h2>How the team worked</h2></div>
           <div>
             <div class="prose">
-              <p>A team drawn from across the verticals, not a single property's design group. The Design Innovation team pulled designers from across Yahoo!'s surfaces into one room with one mandate: build the architecture the whole company could share. I held the Search seat. That structure was the point. A navigation rule meant to govern every property could not be authored inside any one property, or it would carry that property's bias; it had to come from a team that answered to the platform instead of to a single product line. The work ran the way good systems work runs, on the wall before the screen. The team broke the existing experience apart in working sessions, stress tested the rule against user stories, took it across devices, then built prototypes for desktop, tablet, and mobile to feel whether the logic actually held in the hand. Leading Search design inside that team meant taking the surface that fit the shared rule worst and making it the surface that proved the rule was real. If the structure could hold search, it could hold anything.</p>
+              <p>The Design Innovation team pulled designers from across Yahoo!'s surfaces into one room with one mandate: build the architecture the whole company could share. I held the Search seat. A rule meant to govern every property could not be authored inside any one of them without carrying its bias, so it came from a team that answered to the platform. The work happened on the wall before the screen: breaking the existing experience apart in working sessions, stress testing the rule against user stories, then prototyping for desktop, tablet, and mobile to feel whether the logic held in the hand. If the structure could hold search, it could hold anything.</p>
             </div>
             <div class="figure"><div class="media" data-image="yahoo-p3-working-session"><span class="ph">Image</span></div></div>
           </div>
@@ -132,7 +132,7 @@
           <div class="label-col"><h2>The outcome</h2></div>
           <div>
             <div class="prose">
-              <p>The redesign gave Yahoo! one navigation rule across every surface and device, the team's work, and the measure of my part is what it did for the connection that rule depended on most. Search stopped being a detour out of the platform and became the layer that tied the verticals together: a query inherited the user's context, a result opened into a topic river owned by another team, and from there the user moved by the same rule as everywhere else. The surface most likely to break the unified experience, because it touched every other surface, became one of the surfaces that held it together. That is the contribution a lead is there to make, not to set the rule the whole company runs on, but to own the connection that rule needed most and make it carry the weight of the entire platform behind it.</p>
+              <p>Yahoo! got one navigation rule across every surface and device, and Search became the layer that tied the verticals together. A query inherited the user's context, a result opened into a topic river owned by another team, and from there the user moved by the same rule as everywhere else. The surface most likely to break the unified experience became one of the surfaces that held it together.</p>
             </div>
             <dl class="outcome-table">
               <div class="row"><dt>Platform context (team)</dt><dd>One navigation rule, horizontal across interests and vertical for more, governing every Yahoo! surface and device through two levels, Base and River, with a six archetype card system as the shared content vocabulary</dd></div>
@@ -149,7 +149,7 @@
         <div class="wrap section-grid">
           <div class="label-col"><h2>Close</h2></div>
           <div class="prose">
-            <p>A rule that spans the whole platform is only as real as the connection that has to carry it. At Yahoo! that connection was search, the one surface that touched every other, where a user could land in any vertical from a single query. Leading the design that turned search into that connection was not the work of setting the company's direction. It was the work of owning the piece the direction ran through, the layer where the unified experience either held together across every vertical or came apart at the surface most users started from. Every platform has a connection that decides whether the whole thing coheres. At Yahoo! that connection was search, and that was mine.</p>
+            <p>Every platform has one connection that decides whether the whole thing coheres, and it is rarely the one on the org chart. At Yahoo! it was search. Finding that connection early, and designing it before the seams show, is the habit this work built.</p>
           </div>
         </div>
       </section>
@@ -162,6 +162,20 @@
           </a>
         </div>
       </nav>
+
+      <!-- CONTACT -->
+      <section class="contact-cta" id="contact">
+        <div class="wrap">
+          <div class="eyebrow">Contact</div>
+          <h2>Let's talk about <em>what needs building.</em></h2>
+          <p class="body">I'm mostly interested in a senior design leadership role, leading an organization through the kind of transformation in this work. I'm also open to consulting when the problem is the right one.</p>
+          <div class="hero-cta">
+            <a href="mailto:chi999@gmail.com" class="btn btn-dark">Get in touch &#8599;</a>
+            <a href="https://www.linkedin.com/in/chsiao" class="btn btn-ghost" target="_blank" rel="noopener">Connect on LinkedIn &#8599;</a>
+          </div>
+        </div>
+      </section>
+
     </main>
 
     <footer class="legal">
@@ -172,7 +186,6 @@
             <a href="/work/">Work</a>
             <a href="/practice/">Practice</a>
             <a href="/about/">About</a>
-            <a href="/about/#contact">Contact</a>
             <button class="theme-toggle" aria-label="Toggle light and dark mode">
               <svg class="icon-moon" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
               <svg class="icon-sun" width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2.5v2M12 19.5v2M2.5 12h2M19.5 12h2"/></svg>
