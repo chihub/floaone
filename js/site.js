@@ -20,6 +20,15 @@
     menuBtn.addEventListener("click", function () {
       var open = links.classList.toggle("open");
       menuBtn.setAttribute("aria-expanded", open ? "true" : "false");
+      // The links sit before the button in the page order, so Tab from the button would skip
+      // them. Send keyboard focus into the open menu instead.
+      if (open) { var first = links.querySelector("a"); if (first) first.focus(); }
+    });
+    document.addEventListener("keydown", function (e) {
+      if (e.key !== "Escape" || !links.classList.contains("open")) return;
+      links.classList.remove("open");
+      menuBtn.setAttribute("aria-expanded", "false");
+      menuBtn.focus();
     });
   }
 
@@ -57,8 +66,13 @@
     if (!target) return;
     e.preventDefault();
     if (links) links.classList.remove("open");
+    if (menuBtn) menuBtn.setAttribute("aria-expanded", "false");
     scroll.scrollTo(target, { offset: headerOffset });
     history.replaceState(null, "", url.hash);
+    // preventDefault also stops the browser moving focus, so keyboard users would stay behind
+    // on the link they pressed. Move focus to the target without a native scroll.
+    if (!target.hasAttribute("tabindex")) target.setAttribute("tabindex", "-1");
+    target.focus({ preventScroll: true });
   });
 
   // Content height changes once web fonts and images arrive; re-measure, then honor a hash
