@@ -92,7 +92,7 @@ nav.main { display: flex; align-items: center; justify-content: space-between; h
 
 /* hero */
 .hero { padding: 64px 0 0; }
-.hero-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; }
+.hero-cols { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: start; }
 .hero h1 { font-size: 54px; line-height: 1.06; margin: 22px 0 28px; }
 .hero h1 em, .page-head h1 em { font-style: italic; color: var(--accent); font-weight: 400; }
 .hero .lede { font-size: 17px; line-height: 1.6; color: var(--ink-2); margin-bottom: 30px; }
@@ -205,9 +205,10 @@ footer.legal { padding: 28px 0; }
 .legal-row .theme-toggle { padding: 0 0 0 4px; }
 
 /* ===== Inner pages ===== */
-.page-head { padding: 80px 0 56px; }
+/* Same top padding and title spacing as the Home hero, so titles never shift between pages */
+.page-head { padding: 64px 0 56px; }
 .page-head .inner { max-width: 860px; }
-.page-head h1 { font-size: 54px; line-height: 1.08; margin: 18px 0 24px; }
+.page-head h1 { font-size: 54px; line-height: 1.06; margin: 22px 0 28px; }
 .page-head .standfirst { font-size: 18px; line-height: 1.6; color: var(--ink-2); max-width: var(--readw); }
 .page-head .standfirst + .standfirst { margin-top: 18px; }
 
@@ -315,7 +316,7 @@ footer.legal { padding: 28px 0; }
   .nav-links a { padding: 12px 0; font-size: 16px; border-bottom: 1px solid var(--border); }
   .nav-links a:last-child { border-bottom: 0; }
 
-  .page-head { padding: 56px 0 40px; }
+  .page-head { padding: 64px 0 40px; }
   .page-head .standfirst { font-size: 17px; }
   .section { padding: 44px 0; }
   .section-grid, .section-grid.label-narrow { grid-template-columns: 1fr; gap: 20px; }
