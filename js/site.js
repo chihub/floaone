@@ -3,12 +3,24 @@
 (function () {
   var root = document.documentElement;
 
+  var toggles = document.querySelectorAll(".theme-toggle");
+
+  // Each toggle is labeled "Dark mode" and reports its state, so screen readers hear
+  // "Dark mode, toggle button, pressed" rather than only an action.
+  function syncToggles() {
+    var dark = root.getAttribute("data-theme") === "dark";
+    toggles.forEach(function (btn) { btn.setAttribute("aria-pressed", dark ? "true" : "false"); });
+  }
+
   function setTheme(next) {
     root.setAttribute("data-theme", next);
     try { localStorage.setItem("theme", next); } catch (e) {}
+    syncToggles();
   }
 
-  document.querySelectorAll(".theme-toggle").forEach(function (btn) {
+  syncToggles();
+
+  toggles.forEach(function (btn) {
     btn.addEventListener("click", function () {
       setTheme(root.getAttribute("data-theme") === "dark" ? "light" : "dark");
     });
