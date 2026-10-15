@@ -247,6 +247,15 @@ footer.legal { padding: 28px 0; }
 .outcome-table .row { display: grid; grid-template-columns: 220px 1fr; gap: 32px; padding: 20px 0; border-bottom: 1px solid var(--border); }
 .outcome-table dt { font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ink); padding-top: 3px; }
 .outcome-table dd { font-size: 16px; line-height: 1.7; color: var(--ink-2); }
+/* case study "At a glance": the 30-second version under the standfirst */
+.glance { display: grid; grid-template-columns: 1fr 1.3fr; gap: 40px; margin-top: 36px; padding: 24px 0; border-top: 1px solid var(--border); border-bottom: 1px solid var(--border); max-width: 900px; }
+.glance-facts { margin: 0; }
+.glance-facts div { display: grid; grid-template-columns: 64px 1fr; gap: 12px; padding: 4px 0; }
+.glance-facts dt { font-size: 12px; font-weight: 600; letter-spacing: 1px; text-transform: uppercase; color: var(--ink-3); padding-top: 3px; }
+.glance-facts dd { margin: 0; font-size: 15px; line-height: 1.5; color: var(--ink-2); }
+.glance-outcomes { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: repeat(3, 1fr); gap: 24px; }
+.glance-outcomes .n { display: block; font-family: var(--ff-serif); font-size: 30px; font-weight: 600; line-height: 1.1; color: var(--accent); }
+.glance-outcomes .l { display: block; margin-top: 6px; font-size: 13px; line-height: 1.5; color: var(--ink-3); }
 .later-beat { margin-top: 32px; max-width: var(--readw); font-size: 16px; color: var(--ink-3); line-height: 1.7; }
 
 .next-case { padding: 56px 0; border-top: 1px solid var(--border); }
@@ -326,11 +335,13 @@ footer.legal { padding: 28px 0; }
   .figure .media, .figure.wide .media { min-height: 240px; }
   .figure-pair { grid-template-columns: 1fr; }
   .outcome-table .row { grid-template-columns: 1fr; gap: 6px; }
+  .glance { grid-template-columns: 1fr; gap: 24px; }
   .entry, .entry.notable-entry { grid-template-columns: 1fr; gap: 20px; padding: 40px 0; }
   .principles, .cards-2, .cards-2.cards-3 { grid-template-columns: 1fr; }
   .legal-row { flex-direction: column; align-items: flex-start; }
 }
 @media (max-width: 480px) {
+  .glance-outcomes { grid-template-columns: 1fr; gap: 16px; }
   .impact-stats { grid-template-columns: repeat(2, 1fr); }
   .hero h1, .page-head h1 { font-size: 36px; }
 }
