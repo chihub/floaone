@@ -96,7 +96,11 @@
     refresh();
     if (location.hash) {
       var target = document.getElementById(decodeURIComponent(location.hash.slice(1)));
-      if (target) scroll.scrollTo(target, { offset: headerOffset, duration: 0, disableLerp: true });
+      // Locomotive finishes re-measuring on its next frame; jumping before then stops short.
+      if (target) setTimeout(function () {
+        scroll.update();
+        scroll.scrollTo(target, { offset: headerOffset, duration: 1, disableLerp: true });
+      }, 100);
     }
   });
 })();
